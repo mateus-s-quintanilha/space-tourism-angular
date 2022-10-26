@@ -1,0 +1,278 @@
+* {
+    color: white;
+}
+
+
+
+.rotate {
+    animation: rotation 2s;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.slide {
+    cursor: pointer;
+}
+
+.container-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-slide h1 {
+    margin-bottom: 2rem;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 50%; */
+    margin-left: 12rem;
+    margin-right: 6rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.content .navbar{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.navbar li:not(#selected){
+    margin-top: .15rem;
+    margin-left: 0.9rem;
+    color: #FFF;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    animation: rotation 50s linear infinite;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-family: serif;
+    font-weight: 100;
+}
+
+
+#selected {
+    border-bottom: 3px solid white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 10px;
+    /* margin-left: 14px; */
+    margin-left: 0.9rem;
+    color: #FFF;
+    opacity: 2;
+    white-space: nowrap;
+}
+
+.image h1 > span {
+    margin-left: 0.66rem;
+    font-size: 22px;
+}
+
+#title-num {
+    color: #705959;
+}   
+
+.content p {
+    max-width: 70%;
+    text-align: justify;
+    word-spacing: 4px;
+    line-height: 30px;
+    color: #FFF;
+    opacity: 0.9;
+}
+
+#line {
+    margin-top: 1rem;
+    border-bottom: #FFF;
+    max-width: 70%;
+
+}
+
+.informations {
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.distance {
+    margin-left: 1rem;
+}
+.distance h4{
+    font-size: 14px;
+    word-spacing: 3px;
+    padding-bottom: .5rem;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+.distance span {
+    font-size: 26px;
+}
+
+.travel {
+    margin-right: 1rem;   
+}
+
+.travel h4{
+    font-size: 14px;
+    word-spacing: 3px;
+    padding-bottom: .5rem;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+.travel span {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1175px) {
+    .distance h4, .travel h4{
+        font-size: 12px;
+    }
+
+    .travel span, .distance span {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 1145px) {
+    
+
+    .travel span, .distance span {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 13px;
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 1125px) {
+
+
+    .travel span, .distance span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .distance h4, .travel h4{
+        font-size: 10px;
+    }
+    .distance {
+        margin-right: 16px;
+    }
+    .travel span, .distance span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content .navbar{
+        font-size: 12px;
+    }
+
+
+    .travel span, .distance span {
+        font-size: 12px;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .image h1 {
+        white-space: nowrap;
+    }
+
+    .content {
+        margin-left: -1rem;
+    }
+
+    .image img, .image h1 {
+        margin-left: -4rem;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .image img, .image h1 {
+        margin-left: -9rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .image h1 > span {
+        /* margin-left: 0.66rem; */
+        font-size: 20px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image img, .image h1 {
+        margin-left: -11rem;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+}

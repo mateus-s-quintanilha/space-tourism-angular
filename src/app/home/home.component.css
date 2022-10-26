@@ -1,0 +1,178 @@
+.body {
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%;
+    height: 100%;
+    background-image: url(../../assets/home/background-home-desktop.jpg);  */
+} 
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 80vh;
+}
+
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
+
+    max-width: 50%;
+}
+
+.apresentation h1 {
+    color: #FFF;
+    opacity: 0.7;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+
+.apresentation span{
+    margin-left: 1rem;
+}
+
+.mainButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+
+    max-width: 50%;
+}
+
+.section {
+    max-width: 60%;
+    color: #FFF;
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#line {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 428px;
+    color: black;
+    border:1px solid rgba(141, 123, 123, 0.418);
+}
+
+#main-title {
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-size: clamp(5rem,9vw,8rem);
+}
+
+#button {
+    background-color: rgba(255, 255, 255, 0.836);
+    color: black;
+    /* padding: 120px 80px; */
+    padding: 100px 60px;
+    border-radius: 100%;
+    font-size: 25px;
+    cursor: pointer;  
+    transition: 0.3s;
+}
+
+#button:hover {
+    background-color: #FFF;
+    padding: 130px 90px;
+    filter: brightness(1);
+}
+
+@media screen and (max-width: 1255px) {
+    #line {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    #line {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    #line {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #line {
+        width: 100px;
+    }
+
+    .apresentation h1 {
+        font-size: 30px;
+    }
+    #main-title {
+        font-size: 65px;
+    }
+
+    .section {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    #line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .apresentation h1 {
+        font-size: 25px;
+    }
+
+    #main-title {
+        font-size: 55px;
+    }
+
+    #button {
+        padding: 80px 45px;
+    }
+
+    #button:hover {
+        padding: 100px 65px; 
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .apresentation h1 {
+        font-size: 20px;
+    }
+
+    #main-title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .apresentation h1 {
+        font-size: 15px;
+    }
+
+    #main-title {
+        font-size: 40px;
+
+    }
+    .section {
+        font-size: 13px;
+    }
+
+    #button {
+        padding: 60px 30px;
+    }
+
+    #button:hover {
+        padding: 70px 40px; 
+    }
+}
